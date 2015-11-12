@@ -14,6 +14,15 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+    position: relative;
+}
+
+
+.top-spacing {
+    padding-top: 60px;
+}
+
 .clear-fix {
   overflow: auto;
 }
@@ -92,6 +101,10 @@ a {
   display: block;
 }
 
+nav a {
+  margin-top: 0;
+}
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;
@@ -162,6 +175,10 @@ img {
 
 span {
   padding: 5px;
+}
+
+nav span {
+    padding: 0;
 }
 
 #lets-connect {
