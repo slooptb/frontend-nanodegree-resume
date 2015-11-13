@@ -17,19 +17,19 @@ var HTMLpageTitle = '<title>%data% - Resume</title>';
 var HTMLheaderName = '<a class="navbar-brand" href="#">%data%</a>';
 var HTMLheaderRole = '<p class="navbar-text collapse navbar-collapse">%data%</p>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text"><i class="fa fa-mobile"></i></span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text"><i class="fa fa-envelope"></i></span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text"><i class="fa fa-twitter"></i></span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text"><i class="fa fa-github"></i></span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text"><i class="fa fa-wordpress"></i></span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text"><i class="fa fa-map-marker"></i></span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="contact-text">%contact%</span><span class="contact-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="contact-text"><i class="fa fa-mobile"></i></span><span class="contact-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="contact-text"><i class="fa fa-envelope"></i></span><span class="contact-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="contact-text"><i class="fa fa-twitter"></i></span><span class="contact-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="contact-text"><i class="fa fa-github"></i></span><span class="contact-text">%data%</span></li>';
+var HTMLblog = '<li class="flex-item"><span class="contact-text"><i class="fa fa-wordpress"></i></span><span class="contact-text">%data%</span></li>';
+var HTMLlocation = '<li class="flex-item"><span class="contact-text"><i class="fa fa-map-marker"></i></span><span class="contact-text">%data%</span></li>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLbioPic = '<img src="%data%" class="biopic center-block">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskillsStart = '<ul id="skills" class="flex-box"></ul>';
+var HTMLskills = '<li class="flex-item"><span>%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';

@@ -11,13 +11,12 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Special Elite', sans-serif;
 }
 
 body {
     position: relative;
 }
-
 
 .top-spacing {
     padding-top: 60px;
@@ -25,6 +24,10 @@ body {
 
 .clear-fix {
   overflow: auto;
+}
+
+.container-fluid {
+  max-width: 900px;
 }
 
 .education-entry,
@@ -44,8 +47,10 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   color: #999;
+  text-transform: uppercase;
+  border-bottom: solid 5px #8b1014;
   line-height: 29px;
-  padding: 10px;
+  padding: 5px;
 }
 
 h3 {
@@ -70,6 +75,43 @@ h5 {
 
 }
 
+/* Bootstrap Custom Navbar */
+
+.navbar-default {
+  background-color: #8b1014;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-text {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #dce775;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #dce775;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: black;
+  background-color: #dce775;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: black;
+  background-color: #dce775;
+}
+
+/* End Bootstrap Custom Navbar */
 
 .date-text {
   font-style: italic;
@@ -130,20 +172,11 @@ nav a {
   color: #fff;
 }
 
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
+.contact-text {
+  color: #8b1014;
+  font-weight: bold;
 }
 
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
-}
 
 .flex-box {
   display: -webkit-flex;
@@ -163,10 +196,9 @@ ul {
 }
 
 .biopic {
-  float: left;
   padding: 10px;
   width: 200px;
-  display: none;
+  border-radius: 50%;
 }
 
 img {

@@ -1,3 +1,7 @@
+/*
+    js/resumeBuilder.js
+    Tom Butterworth - 11/13/15
+ */
 
 var bio = {
     "name": "Tom Butterworth",
@@ -9,7 +13,7 @@ var bio = {
         "twitter": "@SloopTomB",
         "location": "Las Vegas, NV"
     },
-    "pictureURL": "images/197x148.gif",
+    "pictureURL": "images/profile_tom.png",
     "welcomeMessage": "Hello my name is Tom...",
     "skills": ["HTML5", "CSS", "Git", "JavaScript", "jQuery", "Network+", "PHP", "mySQL", "Apache"],
     "display": function() {
@@ -19,7 +23,7 @@ var bio = {
         $(".navbar-header").append(HTMLheaderName.replace("%data%", bio.name))
             .append(HTMLheaderRole.replace("%data%", bio.role));
 
-        $("#header").append(HTMLbioPic.replace("%data%", bio.pictureURL));
+        $("#header").prepend(HTMLbioPic.replace("%data%", bio.pictureURL));
 
         if(bio.skills.length > 0) {
             $("#header").append(HTMLskillsStart);
@@ -203,12 +207,10 @@ education.display();
 
 $("#mapDiv").append(googleMap);
 
+// Scroll spy init
 $('[data-spy="scroll"]').each(function () {
     var $spy = $(this).scrollspy('refresh')
 });
 
 // Call function that was previously in index.html
 sectionChecker();
-
-
-
